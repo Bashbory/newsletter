@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" role="main">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- tailwind  -->
+  <link rel="stylesheet" href="./dist/output.css">
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-[#36384E]">
+
+
+<div role="heading" class="mt-28  mx-auto w-fit bg-white overflow-hidden rounded-3xl border-[20px] border-white flex">
+  <div class="flex ">
+    <div class="px-8 mt-10" id="myMain">
+      <h2 class="text-[#242742] font-Roboto text-5xl font-bold">Stay updated!</h2>
+      <p class="py-6 text-[#242742] font-Roboto text-sm">Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="flex flex-col gap-4">
+        <div class="flex space-x-4">
+          <img src="./assets/images/icon-list.svg" alt="" class="">
+          <p class="text-[#242742] font-Roboto text-sm">Product discovery and building what matters</p>
+        </div>
+        <div class="flex space-x-4">
+          <img src="./assets/images/icon-list.svg" alt="" class="">
+          <p class="text-[#242742] font-Roboto text-sm">Measuring to ensure updates are a success</p>
+        </div>
+        <div class="flex space-x-4">
+          <img src="./assets/images/icon-list.svg" alt="" class="">
+          <p class="text-[#242742] font-Roboto text-sm">And much more!</p>
+        </div>
+      </div>
+      <div class="flex flex-col py-8">
+        <label for="email" class="text-[#242742] font-Roboto text-xs font-bold flex justify-between">Email address 
+          <span class="text-[#FF6257] hidden" id="error">Valid email required</span></label> 
+          <input type="email" name="" id="email" value="" placeholder="email@company.com"
+          class="my-2 border-gray-200  border-[2px] py-2 px-3 rounded-lg " required>
+          <button type="submit" id="sub" onclick="myFunction()"
+          class="my-2 bg-[#242742] py-4 rounded-lg font-Roboto text-white text-xs font-bold">Subscribe to monthly newsletter</button>
+        
+      </div>
+
+    </div>
+    <div class="" id="myIm">
+      <picture><img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class=""></picture>
+    </div>
+</div>
+  <div class="hidden flex flex-col mx-8">
+    <picture><img src="./assets/images/icon-success.svg" alt="" class="w-12 mt-4"></picture>
+    <h2 class="text-[#242742] font-Roboto text-4xl font-black py-8">Thanks for subscribing!</h2>
+    <p class="text-[#242742] font-Roboto text-xs ">A confirmation email has been sent to <span class="font-bold"> ash@loremcompany.com. </span>
+      Please open it and click the button inside to confirm your subscription.</p>
+    <button class="my-6 bg-[#242742] py-4 rounded-lg font-Roboto text-white text-xs font-bold">Dismiss message</button>
+  </div>
+
+</div>
+
+<!-- <div role="heading" class="mt-28 container max-w-sm mx-auto bg-white overflow-hidden rounded-3xl border-[20px] border-white flex">
+
+    <div class="flex flex-col mx-8">
+      <picture><img src="./assets/images/icon-success.svg" alt="" class="w-12 mt-4"></picture>
+      <h2 class="text-[#242742] font-Roboto text-4xl font-black py-8">Thanks for subscribing!</h2>
+      <p class="text-[#242742] font-Roboto text-xs ">A confirmation email has been sent to <span class="font-bold"> ash@loremcompany.com. </span>
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button class="my-6 bg-[#242742] py-4 rounded-lg font-Roboto text-white text-xs font-bold">Dismiss message</button>
+    </div>
+
+</div> -->
+ 
+
+  <!-- Success message start -->
+
+  Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message
+
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./src/main.js"></script>
+</body>
+</html>

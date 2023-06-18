@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" role="main">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- tailwind  -->
+  <link rel="stylesheet" href="./dist/output.css">
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-[#36384E]">
+
+
+<div role="heading" id="con" class=" mt-28 container max-w-screen-md mx-auto bg-white overflow-hidden rounded-3xl border-[20px] border-white flex 
+max-md:border-none max-md:rounded-none max-md:mt-0 max-md:justify-center max-sm:w-[100%]">
+  <div class="flex max-md:flex-col-reverse" id="head">
+    <div class="px-8 pt-10" id="myMain">
+      <h2 class="text-[#242742] font-Roboto text-5xl font-bold">Stay updated!</h2>
+      <p class="py-6 text-[#242742] font-Roboto text-sm">Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="flex flex-col gap-4">
+        <div class="flex space-x-4">
+          <img src="./assets/images/icon-list.svg" alt="" class="wow rotateIn">
+          <p class="text-[#242742] font-Roboto text-sm">Product discovery and building what matters</p>
+        </div>
+        <div class="flex space-x-4">
+          <img src="./assets/images/icon-list.svg" alt="" class="wow rotateIn">
+          <p class="text-[#242742] font-Roboto text-sm">Measuring to ensure updates are a success</p>
+        </div>
+        <div class="flex space-x-4">
+          <img src="./assets/images/icon-list.svg" alt="" class="wow rotateIn">
+          <p class="text-[#242742] font-Roboto text-sm">And much more!</p>
+        </div>
+      </div>
+      <div class="flex flex-col py-8">
+        <label for="email" class="text-[#242742] font-Roboto text-xs font-bold flex justify-between">Email address 
+          <span class="text-[#FF6257] hidden wow shakeX" id="error">Valid email required</span></label> 
+          <input type="email" name="" id="email" value="" placeholder="email@company.com"
+          class="my-2 border-gray-200  border-[2px] py-2 px-3 rounded-lg " required>
+          <button type="submit" id="sub" 
+          class="my-2 bg-[#242742] py-4 rounded-lg font-Roboto text-white text-xs font-bold">Subscribe to monthly newsletter</button>
+        
+      </div>
+
+    </div>
+    <div class="" id="myIm">
+      <picture><img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="max-md:hidden"></picture>
+      <picture><img src="./assets/images/illustration-sign-up-mobile.svg" alt="" class="hidden max-md:block max-md:w-full"></picture>
+    </div>
+</div>
+  <div class="hidden flex flex-col mx-8 wow fadeIn max-md:object-center max-md:h-screen max-md:w-screen 
+  max-md:overflow-hidden " id="thanks">
+    <picture><img src="./assets/images/icon-success.svg" alt="" class="w-12 mt-4 wow flip max-md:pt-20"></picture>
+    <h2 class="text-[#242742] font-Roboto text-4xl font-black py-8">Thanks for subscribing!</h2>
+    <p id="mm" class="text-[#FF6257] font-Roboto font-bold py-2 text-center max-md:text-left"></p>
+    <p class="text-[#242742] font-Roboto text-xs ">A confirmation email has been sent to <span class="font-bold"> ash@loremcompany.com. </span>
+      Please open it and click the button inside to confirm your subscription.</p>
+    <button onclick="myFunction()" class="my-6 bg-[#242742] py-4 rounded-lg
+     font-Roboto text-white text-xs font-bold hover:bg-gradient-to-r from-red-500 to-orange-500 transition duration-500
+     max-md:mt-56 max-md:overflow-hidden">Dismiss message</button>
+  </div>
+
+</div>
+
+
+  <script src="./src/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    new WOW().init();
+    </script>
+</body>
+</html>
